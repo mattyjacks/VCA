@@ -1,4 +1,5 @@
 import { saasTemplates } from "@/lib/data/companies";
+import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { DollarSign, Code, Github, ExternalLink, Heart, Users, Percent } from "lucide-react";
 import { ThemeSwitcher } from "@/components/theme-switcher";

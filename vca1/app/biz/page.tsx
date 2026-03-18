@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { DollarSign, ExternalLink, LogIn, ArrowRight, Shield } from "lucide-react";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { Footer } from "@/components/footer";
 
 export default function BizPage() {
   const [countdown, setCountdown] = useState(5);
