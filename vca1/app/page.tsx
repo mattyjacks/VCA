@@ -2,6 +2,7 @@ import { Hero } from "@/components/hero";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { CompanyCard } from "@/components/company-card";
 import { Footer } from "@/components/footer";
+import { GiveGigsControlStrip } from "@/components/givegigs-control-strip";
 import { companies } from "@/lib/data/companies";
 import Link from "next/link";
 import { DollarSign, Briefcase, ShoppingCart, Users } from "lucide-react";
@@ -11,6 +12,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col items-center">
+      <GiveGigsControlStrip app="venturecapitalarts" />
       <div className="flex-1 w-full flex flex-col items-center">
         <nav className="w-full flex justify-center border-b border-primary/20 h-16 bg-card/50 backdrop-blur-sm sticky top-0 z-50">
           <div className="w-full max-w-6xl flex justify-between items-center p-3 px-5 text-sm">
@@ -31,6 +33,30 @@ export default function Home() {
                 <Link href="/biz" className="text-muted-foreground hover:text-foreground transition-colors">
                   /biz/
                 </Link>
+                <a
+                  href="https://givegigs.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  GiveGigs
+                </a>
+                <a
+                  href="https://mattyjacks.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  MattyJacks
+                </a>
+                <a
+                  href="https://cryptartist.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  CryptArtist
+                </a>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -128,6 +154,22 @@ export default function Home() {
               >
                 Browse SAAS Templates
               </Link>
+              <a
+                href="https://givegigs.com"
+                target="_blank"
+                rel="noreferrer"
+                className="px-8 py-4 border-2 border-primary text-primary rounded-xl font-semibold hover:bg-primary/10 transition-all"
+              >
+                Open GiveGigs
+              </a>
+              <a
+                href="https://cryptartist.com"
+                target="_blank"
+                rel="noreferrer"
+                className="px-8 py-4 border-2 border-primary text-primary rounded-xl font-semibold hover:bg-primary/10 transition-all"
+              >
+                Open CryptArtist
+              </a>
               <Link 
                 href="https://mattyjacks.com" 
                 target="_blank"
